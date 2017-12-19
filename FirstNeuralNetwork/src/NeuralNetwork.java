@@ -19,6 +19,7 @@ public class NeuralNetwork {
 		this.trainedOutputs = trainedOutputs;
 		
 		startNetwork();
+		
 	}
 	
 	public void startNetwork(){
