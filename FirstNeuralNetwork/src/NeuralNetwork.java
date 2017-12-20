@@ -2,24 +2,19 @@
 public class NeuralNetwork {
 
 	private int inputLayerSize, outputLayerSize, hiddenLayers, hiddenLayerSize;
-	
 	private double[] inputs;
-	private double[][] trainedOutputs;
-	
 	private Neuron[] inputNeurons;
 	private Neuron[] outputNeurons;
 	private Neuron[][] hiddenNeurons;
 
-	public NeuralNetwork(int inputLayerSize, int outputLayerSize, int hiddenLayers, int hiddenLayerSize, double[] inputs, double[][] trainedOutputs) {
+	public NeuralNetwork(int inputLayerSize, int outputLayerSize, int hiddenLayers, int hiddenLayerSize, double[] inputs) {
 		this.inputLayerSize = inputLayerSize;
 		this.outputLayerSize = outputLayerSize;
 		this.hiddenLayers = hiddenLayers;
 		this.hiddenLayerSize = hiddenLayerSize;
 		this.inputs = inputs;
-		this.trainedOutputs = trainedOutputs;
 		
 		startNetwork();
-		
 	}
 	
 	public void startNetwork(){

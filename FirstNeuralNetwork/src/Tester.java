@@ -4,8 +4,8 @@ public class Tester {
 
 	public static void main(String[] args) {
 		double[] inputs = {3,5};
-		double[][] trainedOutputs = {{75}};
-		NeuralNetwork nn = new NeuralNetwork(2, 1, 1, 3, inputs, trainedOutputs);
+		double[][] trainedOutputs = {{75},{82},{93}};
+		NeuralNetwork nn = new NeuralNetwork(2, 1, 1, 3, inputs);
 		Neuron[] iN = nn.getInputNeurons();
 		Neuron[] oN = nn.getOutputNeuron();
 		Neuron[][] hN = nn.getHiddenNeurons();
